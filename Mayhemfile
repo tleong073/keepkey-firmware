@@ -1,0 +1,5 @@
+project: tleong073/keepkey-firmware
+target: fuzz-eos
+
+cmds:
+  - cmd: /fuzzer/firmware/eos_format

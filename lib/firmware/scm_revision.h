@@ -1,0 +1,6 @@
+#ifndef LIB_FIRMWARE_SCM_REVISION_H
+#define LIB_FIRMWARE_SCM_REVISION_H
+
+#define SCM_REVISION "65eddf28e6aff94dd67818cdfb148bf441a502fa"
+
+#endif

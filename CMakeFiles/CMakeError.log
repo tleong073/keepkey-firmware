@@ -1,0 +1,68 @@
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_29d88/fast && /usr/bin/make  -f CMakeFiles/cmTC_29d88.dir/build.make CMakeFiles/cmTC_29d88.dir/build
+make[1]: Entering directory '/home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_29d88.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_29d88.dir/CheckSymbolExists.c.o -c /home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
+   return ((int*)(&strlcpy))[argc];
+                   ^~~~~~~
+                   strncpy
+/home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_29d88.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_29d88.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_29d88.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_29d88/fast' failed
+make: *** [cmTC_29d88/fast] Error 2
+
+
+File /home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c640b/fast && /usr/bin/make  -f CMakeFiles/cmTC_c640b.dir/build.make CMakeFiles/cmTC_c640b.dir/build
+make[1]: Entering directory '/home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c640b.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c640b.dir/CheckSymbolExists.c.o -c /home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘strlcat’ undeclared (first use in this function); did you mean ‘strncat’?
+   return ((int*)(&strlcat))[argc];
+                   ^~~~~~~
+                   strncat
+/home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_c640b.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_c640b.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_c640b.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_c640b/fast' failed
+make: *** [cmTC_c640b/fast] Error 2
+
+
+File /home/tmleong/public/sec/keepkey-firmware/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
