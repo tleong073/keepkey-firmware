@@ -62,6 +62,8 @@ RUN rm -rf /root/protobuf-python
 
 # Setup environment
 ENV PATH /root/nanopb/generator:$PATH
+ENV KK_EMULATOR 1
+ENV KK_BUILD_FUZZERS 1
 
 # Build libopencm3
 WORKDIR /root
